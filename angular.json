@@ -117,8 +117,16 @@
               "devServerTarget": "in-app-request:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "in-app-request"
+    }
+  },
+  "defaultProject": "in-app-request",
+  "cli": {
+    "analytics": "4d71c666-daa3-4fac-9ee3-e401d73a3b45"
+  }
 }
