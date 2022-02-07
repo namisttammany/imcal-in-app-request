@@ -1,78 +1,51 @@
 <body>
   <!-- <button class="back" (click)="goToLandingPage(userEmail)">Go Back to Landing Page</button>  -->
-  <div class="margin">
+  
     
-  <div class="centerBlock">
-      <!-- <h2>Welcome {{userEmail}}</h2> -->
-  </div>   
-  <br>
-  <div>
-      <h3>Request Resource</h3>
-  </div>
-  <br>
-  </div>
-
-  <form [formGroup]="newResource" (ngSubmit)="onSubmit(newResource)">
-
-      <div>
-        <input id="ProgramName" type="text" placeholder="Resource Name" formControlName="ProgramName" style="width:100% !important;">
-      </div>
-      <div>
-          <input id="Address" type="text" placeholder="Street Address" formControlName="Address" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="LocationCity" type="text" placeholder="City" formControlName="EmailAddress" style="width:100% !important;">
-        </div>          
-        <div>
-          <input id="Zip" type="text" placeholder="Zip" formControlName="Zip" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Category" type="text" placeholder="Category(ies). Seperate multiple with comma." formControlName="Category" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Description" type="text" placeholder="Description" formControlName="Description" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Eligibility" type="text" placeholder="Eligibility" formControlName="Eligibility" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="AgeServed" type="text" placeholder="Ages Served" formControlName="AgeServed" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="EmailAddress" type="text" placeholder="Email" formControlName="EmailAddress" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Website" type="text" placeholder="Website" formControlName="Website" style="width:100% !important;">
-        </div>
-        <!-- <div>
-          <input id="Website" type="text" placeholder="Resource Website" formControlName="Website" style="width:100% !important;">
-        </div> -->
-        <div>
-          <input id="Fax" type="text" placeholder="Fax" formControlName="Fax" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Fees" type="text" placeholder="Fees" formControlName="Fees" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="Hours" type="text" placeholder="Hours" formControlName="Hours" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="CoverageArea" type="text" placeholder="Coverage Area" formControlName="CoverageArea" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="TelephoneNumber1" type="text" placeholder="Phone" formControlName="TelephoneNumber1" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="TelephoneDescription1" type="text" placeholder="Phone Description (Office, mobile, etc.)" formControlName="TelephoneDescription1" style="width:100% !important;">
-        </div>
-        <div>
-          <input id="UserEmail" type="text" placeholder="User Email (to receive notification emails of request status)." formControlName="UserEmail" style="width:100% !important;">
-        </div>
-        <div>
-          <button class="button" type="submit">Add Resource</button>
-        </div>
+  
+ 
+  <div class="margin">
+   
+    <div class="logo"><img src="assets\White Short Logo_1_300ppi.png"></div>   
+  
   
 
+  <form [formGroup]="newResource" (ngSubmit)="onSubmit(newResource)">
+    <h3>Request Changes to a Resource</h3>
+     
+        <input id="ProgramName" type="text" placeholder="Resource Name" formControlName="ProgramName" style="width:100% !important;">
+    
+          <input id="Address" type="text" placeholder="Street Address" formControlName="Address" style="width:100% !important;">
+        
+          <input id="LocationCity" type="text" placeholder="City" formControlName="EmailAddress" style="width:100% !important;">
+       
+          <input id="Zip" type="text" placeholder="Zip" formControlName="Zip" style="width:100% !important;">
+       
+          <input id="Category" type="text" placeholder="Category(ies). Seperate multiple with comma." formControlName="Category" style="width:100% !important;">
+       
+          <input id="Description" type="text" placeholder="Description" formControlName="Description" style="width:100% !important;">
+        
+          <input id="Eligibility" type="text" placeholder="Eligibility" formControlName="Eligibility" style="width:100% !important;">
+        
+          <input id="AgeServed" type="text" placeholder="Ages Served" formControlName="AgeServed" style="width:100% !important;">
+        
+          <input id="EmailAddress" type="text" placeholder="Email" formControlName="EmailAddress" style="width:100% !important;">
+          <input id="Website" type="text" placeholder="Website" formControlName="Website" style="width:100% !important;">
+          <input id="Fax" type="text" placeholder="Fax" formControlName="Fax" style="width:100% !important;">
+        
+          <input id="Fees" type="text" placeholder="Fees" formControlName="Fees" style="width:100% !important;">
+        
+          <input id="Hours" type="text" placeholder="Hours" formControlName="Hours" style="width:100% !important;">
+       
+          <input id="CoverageArea" type="text" placeholder="Coverage Area" formControlName="CoverageArea" style="width:100% !important;">
+        
+          <input id="TelephoneNumber1" type="text" placeholder="Phone" formControlName="TelephoneNumber1" style="width:100% !important;">
+        
+          <input id="TelephoneDescription1" type="text" placeholder="Phone Description (Office, mobile, etc.)" formControlName="TelephoneDescription1" style="width:100% !important;">
+       
+          <input id="UserEmail" type="text" placeholder="User Email (to receive notification emails of request status)." formControlName="UserEmail" style="width:100% !important;">
+      
+          <button class="button" type="submit">Add Resource</button>
      </form>
-
+</div>
 </body>

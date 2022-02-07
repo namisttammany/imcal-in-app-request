@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to top left, #9267a9, #541f72);
+}
+.logo {
+    width: 100%;
+}
+.logo img {
+    width:  20%;
+    height: 20%;
+    float: none;
+    padding-right: 0%;
+    padding-top: 2%;
+    padding-bottom: 20px;
+}
+.margin {
+    padding:  1% 10% 6% 10%;
+}
+input {
+    color: black;
+    font-size: large;
+    font-style: normal;
+    background-color: white;
+    border: none;
+    height: 55px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+input:focus { border: none; }
+input:hover {
+    border: none;
+}
+.button {
+    color:white;
+    font-size: large;
+    padding: 25px;
+    background-color: #1a87ac;
+    border-color: #1a87ac;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(83, 82, 82);
+    opacity: 1; /* Firefox */
+  }
+  h3 {
+      color: white;
+      font-size: xx-large;
+  }
+  @media only screen 
+and (max-width : 800px) {
+  /* Styles */
+  .logo img {
+    width:  40%;
+    height: 40%;
+  }
+}
