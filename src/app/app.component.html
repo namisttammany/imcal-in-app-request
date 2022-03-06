@@ -21,8 +21,34 @@
        
           <input id="Zip" type="text" placeholder="Zip" formControlName="Zip" style="width:100% !important;">
        
-          <input id="Category" type="text" placeholder="Category(ies). Seperate multiple with comma." formControlName="Category" style="width:100% !important;">
+          <!-- <input id="Category" type="text" placeholder="Category(ies). Seperate multiple with comma." formControlName="Category" style="width:100% !important;"> -->
        
+          <!-- <div ng-controller="myCtrl"> -->
+ 
+            <select formControlName="Category">
+              <!-- <option value="">Select Category</option>
+              <option *ngFor="let category of categories" [value]="category">{{category}}</option> -->
+            <option disabled="true">Category</option>
+
+            <option value="Education and Employment Assistance">Education and Employment Assistance</option>
+            <option value="Food and Clothing" >Food and Clothing</option>
+            <option value="Family Support Services">Family Support Services</option>
+            <option value="Legal Services">Legal Services</option>
+            <option value="Developmental Disabilities">Developmental Disabilities</option>
+            <option value="Government Offices">Government Offices</option>
+            <option value="Children's Services">Children’s Services</option>
+            <option value="Elderly Assistance">Elderly Assistance</option>
+            <option value="Mental Health & Psychiatric">Mental Health & Psychiatric</option>
+            <option value="Addiction/Substance Abuse">Addiction / Substance Abuse</option>
+            <option value="Crisis Intervention">Crisis Intervention</option>
+            <option value="Housing and Shelter">Housing and Shelter</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Veterans Services">Veterans Services</option>
+            </select>
+             
+            <!-- </div> -->
+
+
           <input id="Description" type="text" placeholder="Description" formControlName="Description" style="width:100% !important;">
         
           <input id="Eligibility" type="text" placeholder="Eligibility" formControlName="Eligibility" style="width:100% !important;">
@@ -43,6 +69,8 @@
         
           <input id="TelephoneDescription1" type="text" placeholder="Phone Description (Office, mobile, etc.)" formControlName="TelephoneDescription1" style="width:100% !important;">
        
+          <input id="UserName" type="text" placeholder="User Name" formControlName="UserName" style="width:100% !important;">
+
           <input id="UserEmail" type="text" placeholder="User Email (to receive notification emails of request status)." formControlName="UserEmail" style="width:100% !important;">
       
           <button class="button" type="submit">Add Resource</button>

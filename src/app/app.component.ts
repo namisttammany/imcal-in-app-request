@@ -38,6 +38,7 @@ export class AppComponent implements OnInit {
   Zip: any
   id: any
   UserEmail: any
+  UserName: any;
   
   newResource = this.formBuilder.group({
     Address: [''],
@@ -61,6 +62,7 @@ export class AppComponent implements OnInit {
     Website: [''],
     Zip: [''],
     UserEmail: [''],
+    UserName: [''],
     
   });
 
@@ -104,6 +106,7 @@ export class AppComponent implements OnInit {
     this.Address = newResource.Address;
     this.Website = newResource.Website;
     this.UserEmail = newResource.UserEmail;
+    this.UserName = newResource.UserName;
     // this.id = newResource.id;
 
 
@@ -140,6 +143,7 @@ export class AppComponent implements OnInit {
       Address: this.newResource.value.Address,
       Website: this.newResource.value.Website,
       UserEmail: this.newResource.value.UserEmail,
+      UserName: this.newResource.value.UserName,
       // id: this.id,
     };
 
