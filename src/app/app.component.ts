@@ -148,7 +148,7 @@ export class AppComponent implements OnInit {
     };
 
     // CALL NODE JS API TO SEND EMAIL TO ADMIN
-    this.http.post('https://fathomless-ocean-93452.herokuapp.com/sendEmail', {"email": 'New resource added. Please login portal to review.', "to": 'akshar.patel@gmail.com'}).subscribe(
+    this.http.post('https://fathomless-ocean-93452.herokuapp.com/sendEmail', {"email": 'New resource added. Please login portal to review.', "to": 'charmaine.com'}).subscribe(
       (val) => {
           console.log("POST call successful value returned in body", 
           val);

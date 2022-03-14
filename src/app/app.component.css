@@ -29,6 +29,21 @@ input:focus { border: none; }
 input:hover {
     border: none;
 }
+select {
+    color: black;
+    font-size: large;
+    font-style: normal;
+    background-color: white;
+    border: none;
+    height: 55px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+select:focus { border: none; }
+select:hover {
+    border: none;
+}
 .button {
     color:white;
     font-size: large;
